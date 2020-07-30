@@ -13,6 +13,20 @@
   <p class="paragrafo">Calcule o valor do seu projeto:</p>
   <img class="img-background" src="img/monitor-cash-credit-card.png">
  </header>
+  
+  <script>
+//calculadora do valor do projeto - freelancer
+
+var valorHora = document.querySelector("#hora");
+var horasProjeto = document.querySelector("#projeto");
+var valorTotal = document.querySelector("#resposta");
+
+function calcular() {
+
+    var valorTotalProjeto = (valorHora.valueAsNumber * horasProjeto.valueAsNumber).toFixed(2);
+    valorTotal.textContent = "Valor Total do Projeto: R$ " + valorTotalProjeto;
+}
+  </script> 
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -204,19 +218,6 @@ max-width: 80%;
   </style>  
 
 <body>
-  <script>
-//calculadora do valor do projeto - freelancer
-
-var valorHora = document.querySelector("#hora");
-var horasProjeto = document.querySelector("#projeto");
-var valorTotal = document.querySelector("#resposta");
-
-function calcular() {
-
-    var valorTotalProjeto = (valorHora.valueAsNumber * horasProjeto.valueAsNumber).toFixed(2);
-    valorTotal.textContent = "Valor Total do Projeto: R$ " + valorTotalProjeto;
-}
-  </script> 
   <div class="logo-background">
     <img class="logo" src="img/freelance.png">
   </div>
